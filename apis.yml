@@ -1,23 +1,62 @@
 aid: bigwaverobotics
+
 name: Bigwaverobotics
-description: 'Bigwaverobotics is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://cdn.imweb.me/upload/S20241024b5cd9ce78e7f8/f5071e3d9954d.png
+
+description: 'Bigwaverobotics is a robotics and AI company focused on building physical artificial intelligence solutions for industrial automation. Their platform integrates hardware and software to deliver real-time AI-driven robotics, targeting sectors such as manufacturing, logistics, and smart infrastructure. The company emphasizes a global standard for industrial physical AI, offering products like Marosol and SOLlink to enhance automation efficiency and safety.'
+
 url: https://raw.githubusercontent.com/api-evangelist/bigwaverobotics/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-28 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-28'
+
 modified: '2026-09-28'
+
 tags:
 - Company
-apis: []
+- Robotics
+- AI
+- Industrial Automation
+- Manufacturing
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/bigwaverobotics-hosts.yml
+- type: Vendors
+  url: vendors/bigwaverobotics-vendors.yml
+- type: DomainSecurity
+  url: security/bigwaverobotics-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/bigwaverobotics
+  url: https://bigwaverobotics.com
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: The company website provides no developer program or API documentation.
+  evidence:
+    - url: https://bigwaverobotics.com
+      status: 200
+  checked: '2026-09-28'
+x-enrichment:
+  date: '2026-09-28'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
